@@ -16,7 +16,7 @@ Here are the projects:
 
 [04_Blog_Website_static](https://github.com/Aimless-Coder/practice_Project_html_css_only/tree/main/04_Blog_Website_static)
 
-[04_Blog_Website_static](https://github.com/Aimless-Coder/practice_Project_html_css_only/tree/main/04_Blog_Website_static)
+[05_Portfolio_Website](https://github.com/Aimless-Coder/practice_Project_html_css_only/tree/main/05_Portfolio_Website)
 
 [06_Restuarant_Website](https://github.com/Aimless-Coder/practice_Project_html_css_only/tree/main/06_Restuarant_Website)
 
