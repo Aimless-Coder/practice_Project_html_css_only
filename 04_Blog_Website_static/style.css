@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    all: unset;
+}
+
+.after-icon{
+    display: none;
+}
+
+
+/* Nav Section */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list ul li{
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in;
+}
+
+.nav-list ul li:hover{
+    border-bottom: 2px solid yellow;
+    transition: 0.3s ease-out;
+}
+
+.logo{
+    padding-right: 20px;;
+    font-size: 18px;
+}
+
+.nav-list ul li{
+    font-size: 22px;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hero-content h1{
+    font-size: 68px;
+    font-weight: 600;
+}
+
+.hero-content h4{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hero-img img{
+    width: 500px;
+    border-radius: 50px;
+}
+
+/* Card Section */
+.high-card{
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
+
+.high-card img{
+    width: 500px;
+}
+
+.h-card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.h-card-content h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-status{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read-more-btn{
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: 0.3ms ease-in;
+}
+
+.read-more-btn:hover{
+    border-bottom: 1px solid #ccc;
+    transition: 0.3ms ease-out;
+    cursor: pointer;
+}
+
+
+/* Card Wrapper */
+
+.low-card{
+    display: flex;
+    justify-content: center;
+}
+
+.low-card-wrap{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    border-radius: 5px;
+}
+
+.low-card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.low-card-content h2{
+    margin-bottom: 10px;
+}
+
+.card-wrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 10px;
+}
+
+.high-card-last{
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Post page */
+.post-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-wrapper h1{
+    font-size: 36px;
+}
+
+.post-status{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 790px){
+    .container{
+        padding: 0px 20px;
+    }
+    .nav-list ul{
+        display: none;
+    }
+
+    .after-icon{
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .hero-content h1{
+        font-size: 54px;
+    }
+    
+    .hero-content h4{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .hero-img img{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .high-card{
+        flex-direction: column;
+    }
+    
+    .high-card img{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .low-card-wrap img{
+        width: 100%;
+
+    }
+
+    .post-wrapper{
+        padding: 0px 30px;
+    }
+   
+}
